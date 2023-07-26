@@ -10,6 +10,8 @@ export class AppComponent implements AfterViewInit{
   title = 'ang-project';
   parentMessage:string = 'Message coming from parent component';
   message?:string;
+  fromChildOutput:string;
+
   @ViewChild(PostComponent) childComp;
 
   constructor(){
@@ -21,6 +23,6 @@ export class AppComponent implements AfterViewInit{
   }
 
   reciveMessage($event: any) {
-    console.log($event);
+    this.fromChildOutput = $event;
   }
 }

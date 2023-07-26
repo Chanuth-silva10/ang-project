@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang-project';
+  parentMessage:string = 'Message coming from parent component';
 }

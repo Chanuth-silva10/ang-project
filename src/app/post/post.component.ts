@@ -10,6 +10,8 @@ export class PostComponent implements OnInit{
   title:string = "List of Posts";
   messagePost: string = 'Message post'
 
+  postParentMessage:string = 'Message coming from the post parent'
+
   @Input() fromParent?:string;
 
   constructor(){}
